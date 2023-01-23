@@ -1,11 +1,14 @@
-import { Text, TextInput, TouchableOpacity, View } from "react-native";
+import { FlatList, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
 
 
 import { Header } from "../../components/Header";
 import { Status } from "../../components/Status";
+import { ItemToDo } from "../../components/ItemToDo"
 
 import { styles } from "./styles";
+
+const test = ["test1", "test2", "test3"]
 
 export function Home() {
   return (
@@ -26,6 +29,14 @@ export function Home() {
 
       <View style={styles.contentBody}>
         <Status />
+
+        <FlatList
+          data={test}
+          keyExtractor={item => item}
+          renderItem={({item}) => (
+            <ItemToDo />
+          )}
+        />
       </View>
     </View>
   )
