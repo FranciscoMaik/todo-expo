@@ -3,6 +3,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 
 import { Header } from "../../components/Header";
+import { Status } from "../../components/Status";
 
 import { styles } from "./styles";
 
@@ -10,6 +11,7 @@ export function Home() {
   return (
     <View style={styles.container}>
       <Header />
+
 
       <View style={styles.contentInput}>
         <TextInput
@@ -20,6 +22,10 @@ export function Home() {
         <TouchableOpacity style={styles.buttonAdd}>
           <Ionicons name="add-circle-outline" size={24} color="black" />
         </TouchableOpacity>
+      </View>
+
+      <View style={styles.contentBody}>
+        <Status />
       </View>
     </View>
   )

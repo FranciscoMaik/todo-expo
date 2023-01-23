@@ -25,5 +25,10 @@ export const styles = StyleSheet.create({
     backgroundColor: "#1E6F9F",
     padding: 16,
     borderRadius: 6,
+  },
+  contentBody: {
+    flex: 1,
+    marginTop: 32,
+    alignItems: "center",
   }
 })
