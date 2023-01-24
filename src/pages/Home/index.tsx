@@ -23,7 +23,7 @@ export function Home() {
           style={styles.input}
         />
         <TouchableOpacity style={styles.buttonAdd}>
-          <Ionicons name="add-circle-outline" size={24} color="black" />
+          <Ionicons name="add-circle-outline" size={24} color="#F2F2F2" />
         </TouchableOpacity>
       </View>
 

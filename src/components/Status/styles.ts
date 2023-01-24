@@ -5,8 +5,6 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     width: "90%",
     justifyContent: "space-between",
-    borderBottomColor: "#333333",
-    borderBottomWidth: 1,
     paddingBottom: 20
   },
   contentText: {
@@ -25,7 +23,8 @@ export const styles = StyleSheet.create({
   },
   counter: {
     fontWeight: "bold",
-    backgroundColor: "#D9D9D9",
+    backgroundColor: "#333333",
+    color: "#D9D9D9",
     paddingVertical: 2,
     paddingHorizontal: 12,
     borderRadius: 9999
