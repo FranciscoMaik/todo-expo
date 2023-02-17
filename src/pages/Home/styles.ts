@@ -19,7 +19,8 @@ export const styles = StyleSheet.create({
     padding: 16,
     width: 271,
     marginRight: 4,
-    fontSize: 16
+    fontSize: 16,
+    color: "#F2F2F2"
   },
   buttonAdd: {
     backgroundColor: "#1E6F9F",
