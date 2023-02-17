@@ -5,16 +5,17 @@ import { Ionicons } from '@expo/vector-icons';
 import { Header } from "../../components/Header";
 import { Status } from "../../components/Status";
 import { ItemToDo } from "../../components/ItemToDo"
+import { EmptyTodo } from "../../components/EmptyToDo";
 
 import { styles } from "./styles";
 
-const test = ["test1", "test2", "test3"]
+const test = []
+// "test1", "test2", "test3"
 
 export function Home() {
   return (
     <View style={styles.container}>
       <Header />
-
 
       <View style={styles.contentInput}>
         <TextInput
@@ -35,6 +36,9 @@ export function Home() {
           keyExtractor={item => item}
           renderItem={({item}) => (
             <ItemToDo />
+          )}
+          ListEmptyComponent={() => (
+            <EmptyTodo />
           )}
         />
       </View>
