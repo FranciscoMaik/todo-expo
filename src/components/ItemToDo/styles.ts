@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
   },
-  boxSelector: {
+  boxSelectorMarked: {
     marginRight: 12,
     borderColor: "#4EA8DE",
     borderWidth: 1,
@@ -22,8 +22,25 @@ export const styles = StyleSheet.create({
     width: 18,
     borderRadius: 99999,
   },
-  action: {
+  boxSelectorNoMarked: {
+    marginRight: 12,
+    borderColor: "#5E60CE",
+    backgroundColor: "#5E60CE",
+    borderWidth: 1,
+    height: 18,
+    width: 18,
+    borderRadius: 99999,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  actionMarked: {
     width: "80%",
     color: "#F2F2F2"
+  },
+  actionNoMarked: {
+    width: "80%",
+    color: "#808080",
+    textDecorationStyle: "dashed",
+    textDecorationLine: "line-through",
   }
 })

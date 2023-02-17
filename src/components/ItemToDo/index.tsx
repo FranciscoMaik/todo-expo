@@ -22,9 +22,11 @@ export function ItemToDo({
     <View style={styles.containerItemToDo}>
       <View style={styles.contentTextAndSelector}>
         <TouchableOpacity onPress={() => onMarkedToDo(id)}>
-          <View style={styles.boxSelector} />
+          <View style={!marked ? styles.boxSelectorMarked : styles.boxSelectorNoMarked} >
+            {marked && <Feather name="check" size={12} color="#F2F2F2" />}
+          </View>
         </TouchableOpacity>
-        <Text style={styles.action}>{itemToDo}</Text>
+        <Text style={!marked ? styles.actionMarked : styles.actionNoMarked}>{itemToDo}</Text>
       </View>
 
       <Feather
