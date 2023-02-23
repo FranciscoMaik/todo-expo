@@ -1,4 +1,4 @@
-# Aplicativo de Criação e Listagem de Grupos
+# Aplicativo de Criação e Listagem de ToDos
 Este é um aplicativo simples que permite aos usuários criar e gerenciar ToDos. Com este aplicativo, os usuários podem criar ToDos, marcar como concluídos e remover;
 
 ## Funcionalidades
